@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">SAVIOUR</string>
+    <string name="alert_browser">This will make you out of the application</string>
+    <string-array name="meetings">
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Halfyearly</item>
+
+    </string-array>
+    <string-array name="college">
+        <item>Quarterly</item>
+        <item>Halfyearly</item>
+
+    </string-array>
+
+    <string-array name="council">
+        <item>External</item>
+        <item>Care Taker</item>
+    </string-array>
+
+    <string-array name="onceina">
+        <item>Once in a month</item>
+        <item>Once in a Quarter</item>
+        <item>Once in six month</item>
+            <item>Once in a year</item>
+    </string-array>
+    <string-array name="room">
+        <item>Inconsistant</item>
+        <item>Alternate</item>
+        <item>Daily</item>
+
+    </string-array>
+    <string-array name="roomvalues">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+
+    <string-array name="status">
+        <item>--Select--</item>
+        <item>Outsted</item>
+        <item>Stained Decision</item>
+        <item>Destitute</item>
+        <item>International</item>
+    </string-array>
+ <string-array name="Condition">
+        <item>--Select--</item>
+        <item>Normal</item>
+        <item>Lunatic</item>
+        <item>Violent</item>
+ </string-array>
+
+</resources>

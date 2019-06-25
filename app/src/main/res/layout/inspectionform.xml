@@ -1,0 +1,1279 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#342522"
+        android:gravity="center_horizontal"
+        android:text="Inspection Form"
+        android:textColor="@color/halfwhite"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_locationname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please Enter Location of the SUH"
+                android:padding="5dp" />
+
+            <EditText
+android:id="@+id/et_shelter_extent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please Enter Extent of the Shelter in sq.ft"
+                android:padding="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="5dp"
+                    android:text=" Whether Executive Committee has been formed and date of formation"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_Yescommitte"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="yes" />
+
+                    <RadioButton
+                        android:id="@+id/rb_nocommitte"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="no" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/dateofformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Please enter Date of Formation"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/noofissuesraised"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Please enter number of issues raised"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/noofissuesresolved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Please enter no of issues resolved"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Meetings"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/meetingsspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/meetings"></Spinner>
+
+            </LinearLayout>
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please Enter Whether bank account has been formed for Corpus fund"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectanglebox"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Capacity"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nocapacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Please Enter Designed capacity (No. of Residents) "
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="Actual number of Residents now occupied"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="Male"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/magedpeople"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/l_reason"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectanglebox"
+                                android:hint="Please enter number of Aged people "
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/Mdifferentlyabled"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/l_reason"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectanglebox"
+                                android:hint="Please enter number of Differently abled "
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/M_others"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/l_reason"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectanglebox"
+                                android:hint="Please enter number of Others"
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/maletotal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/l_reason"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectanglebox"
+                                android:hint="total"
+                                android:padding="5dp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="Female"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/F_Agedpeople"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/l_reason"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectanglebox"
+                                android:hint="Please enter number of Aged people "
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/F_abled"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/l_reason"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectanglebox"
+                                android:hint="Please enter number of Differently abled "
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/F_others"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/l_reason"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectanglebox"
+                                android:hint="Please enter number of Others"
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/femaletotal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/l_reason"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectanglebox"
+                                android:hint="Others"
+                                android:padding="5dp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:text="Children"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/C_Male"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/l_reason"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectanglebox"
+                                android:hint="Please enter number of Male Children's "
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/C_female"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/l_reason"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectanglebox"
+                                android:hint="Please enter number of Female Children's"
+                                android:padding="5dp" />
+
+                            <EditText
+                                android:id="@+id/childtotal"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/l_reason"
+                                android:layout_margin="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rectanglebox"
+                                android:hint="Others"
+                                android:padding="5dp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+
+                android:id="@+id/NGORemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please Enter Actual Name of the N.G.O."
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectanglebox"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Festival"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nofestival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Please Enter number of festivals organised per year"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/nofestivalremark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Please Enter Remark"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Registers"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="Whether the following registers are maintained."
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_Yesregis_maintained"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="yes" />
+
+                        <RadioButton
+                            android:id="@+id/rb_NOregis_maintained"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="no" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/registerdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectanglebox"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="5dp"
+                            android:text="Enrolment Register"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/enrollemnt_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="yes" />
+
+                            <RadioButton
+                                android:id="@+id/enrollment_No"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no" />
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/enrollment_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/l_reason"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectanglebox"
+                            android:hint="Please Enter remark"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectanglebox"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="5dp"
+                            android:text="Medical Register"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/medicalyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="yes" />
+
+                            <RadioButton
+                                android:id="@+id/medicalno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no" />
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/medicalcampnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/l_reason"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectanglebox"
+                            android:hint="Please Enter no. of Medical Camp"
+                            android:padding="5dp" />
+
+                        <EditText
+                            android:id="@+id/medicalremark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/l_reason"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/rectanglebox"
+                            android:hint="Please Enter remark"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectanglebox"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="5dp"
+                            android:text="Counselling  "
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <Spinner
+                            android:id="@+id/Councilspinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/council"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/onceinaspinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/onceina"></Spinner>
+
+                        <EditText
+                            android:id="@+id/councilcampnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/l_reason"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectanglebox"
+                            android:hint="Please Enter no. Counselling camp per year"
+                            android:padding="5dp" />
+
+                        <EditText
+                            android:id="@+id/councilremark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/l_reason"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/rectanglebox"
+                            android:hint="Please Enter remark"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectanglebox"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="5dp"
+                            android:text="Attendance Register"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/attendance_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="yes" />
+
+                            <RadioButton
+                                android:id="@+id/attendance_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no" />
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/attendance_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/l_reason"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectanglebox"
+                            android:hint="Please Enter remark"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectanglebox"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="5dp"
+                            android:text="House Keeping and Maintenance Register"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/housekeeping_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="yes" />
+
+                            <RadioButton
+                                android:id="@+id/housekeeping_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no" />
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/housekeeping_remark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/l_reason"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectanglebox"
+                            android:hint="Please Enter remark"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectanglebox"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="5dp"
+                            android:text="Complaints and Suggestion Register"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/complaints_yes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="yes" />
+
+                            <RadioButton
+                                android:id="@+id/complaints_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no" />
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/complaintsremark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/l_reason"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectanglebox"
+                            android:hint="Please Enter remark"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Amenities "
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/l_reason"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/etInmates"
+                        android:background="@drawable/rectanglebox"
+                        android:hint="Please Enter no. of Residents"
+                        android:padding="5dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Toilets"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/l_reason"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/etToilets"
+                        android:background="@drawable/rectanglebox"
+                        android:hint="Please Enter no. of Toilets"
+                        android:padding="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="Bathroom"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/l_reason"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/etBathroom"
+                        android:background="@drawable/rectanglebox"
+                        android:hint="Please Enter no. of bathroom"
+                        android:padding="5dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="Cot/Bed sheets etc"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/l_reason"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/etWoolen"
+                        android:background="@drawable/rectanglebox"
+                        android:hint="Please Enter no. of Woolen bedsheets"
+                        android:padding="5dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="Cleaning of Room"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <Spinner
+                        android:id="@+id/roomspinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/room"
+                        ></Spinner>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="Cleaning of Bathroom and Toilet"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <Spinner
+                        android:id="@+id/bathroomspinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/room"
+                        android:entryValues="@array/roomvalues"></Spinner>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectanglebox"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Sustainable Assessment"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+
+                    android:padding="5dp"
+                    android:text="Whether bank account has been formed for Corpus fund" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="yes"
+                        android:id="@+id/susyes"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="no"
+                        android:id="@+id/susno"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+
+                    android:padding="5dp"
+                    android:text="Fund Flow" />
+
+                <EditText
+android:id="@+id/etoutflow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Please enter Out-Flow Fund"
+                    android:padding="5dp" />
+
+                <EditText
+android:id="@+id/etinflow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Please enter In-Flow Fund"
+                    android:padding="5dp" />
+
+                <Spinner
+                    android:id="@+id/assesmentspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/meetings"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectanglebox"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Interaction with College"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+
+                    android:padding="5dp"
+                    android:text="Interaction with college and arranging Project work for student" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/interactoin_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="yes" />
+
+                    <RadioButton
+                        android:id="@+id/interaction_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="no" />
+                </RadioGroup>
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/orientation"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Please enter Periodicity of Orientation Arranged."
+                    android:padding="5dp" />
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l_reason"
+                    android:layout_margin="5dp"
+                    android:id="@+id/student_attended"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Please Enter No.of.Student Attended."
+                    android:padding="5dp" />
+
+                <Spinner
+                    android:id="@+id/Interactionspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/college"></Spinner>
+
+            </LinearLayout>
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/drpstatus"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please Enter Whether the Caretaker viz. Manager/Staff are available as per the Norms."
+                android:padding="5dp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:text="Upload Document (PDF Format)"
+                android:padding="5dp" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/uploaddocument_imageview"
+                android:src="@drawable/photo_camera"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:id="@+id/overallremark"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please Enter Overall remarks on the functioning of the Shelter"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectanglebox"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Skill training organized for resident"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etUpto14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="School Enrollment for children upto 14"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/etMiddleage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Skill training for middle age"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/etAbove50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rectanglebox"
+                    android:hint="Moral utility program greater than 50 years"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#342522"
+                android:padding="10dp"
+                android:text="Submit"
+                android:textColor="@color/halfwhite"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

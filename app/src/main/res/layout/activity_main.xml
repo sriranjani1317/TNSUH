@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#342522">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#845e56"
+            android:padding="10dp"
+            android:layout_margin="10dp">
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/inspection"
+    android:layout_gravity="center_vertical"/>
+        <Button
+            android:id="@+id/btn_inspection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#845e56"
+
+            android:text="Views As Inspector"
+            android:textColor="@color/halfwhite"
+            android:textStyle="bold" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#845e56"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/check"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:id="@+id/btn_Auditor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#845e56"
+
+            android:text="Views As Auditor"
+            android:textColor="@color/halfwhite"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

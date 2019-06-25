@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:id="@+id/serverurl"
+    android:hint="Please Enter server URL/IP"
+    android:layout_centerInParent="true"
+    android:layout_margin="10dp"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_url"
+        android:layout_below="@+id/serverurl"
+        android:layout_centerHorizontal="true"
+        android:background="#342522"
+        android:textColor="@color/halfwhite"
+        android:textStyle="bold"
+        android:text="Submit"/>
+
+</RelativeLayout>

@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#342522"
+        android:gravity="center_horizontal"
+        android:text="Registration Form"
+        android:textColor="@color/halfwhite"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter Name"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/et_Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter Age"
+            android:inputType="number"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter Mobile Number"
+            android:inputType="number"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:text="Sex"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_m_f_o"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/female_rb"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="other"
+                    android:id="@+id/others_rb"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_indivualidentified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter PLace where individual was identified"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:orientation="vertical">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Condition"
+                android:id="@+id/sp_condition"
+                android:textSize="18sp"
+                android:entries="@array/Condition"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_n_l_v"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:id="@+id/normal_rb"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lunatic"
+                    android:id="@+id/lunatic_rb"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Violent"
+                    android:id="@+id/violent_rb"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:text="Status"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:entries="@array/status"
+                android:id="@+id/sp_spinner">
+
+            </Spinner>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rg_o_s_d_i"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outsted"
+                    android:id="@+id/outsted_rb"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stained Decision"
+                    android:id="@+id/stained_decision_rb"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Destitute"
+                    android:id="@+id/destitute_rb"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Intentional"
+                    android:id="@+id/intentional_rb"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/et_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:padding="5dp" />
+
+        <Spinner
+            android:id="@+id/et_district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+        <EditText
+            android:id="@+id/et_DState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter State of Domicile"
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/et_DDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter District of Domicile"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/et_town"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter Town/Village of Domicile"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:text="Marital Status"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rg_m_u">
+
+                <RadioButton
+                    android:id="@+id/married"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Married" />
+
+                <RadioButton
+                    android:id="@+id/single"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_married"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_wife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please enter Spouse Name"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/et_childcount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please enter Children Count "
+                android:inputType="number"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_father"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please enter Spouse Name"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/et_MotherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please enter Children Count "
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/et_nosibling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please enter number of siblings "
+                android:inputType="number"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_laststayed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter State/District last stayed "
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/et_longerstay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter Longer
+             Period of stay in State/District"
+            android:padding="5dp" />
+        <LinearLayout
+            android:id="@+id/lt_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:text="Language"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/et_comlaug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please enter Mother Tongue Language"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/et_Read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please enter Language you can Read "
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/et_write"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please enter Mother Tongue "
+                android:padding="5dp" />
+            <EditText
+                android:id="@+id/et_speak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_reason"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:background="@drawable/rectanglebox"
+                android:hint="Please enter Language you can speak "
+                android:padding="5dp" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_Quatlification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter Qualification "
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/et_placestudy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter Place of study "
+            android:padding="5dp" />
+        <EditText
+            android:id="@+id/et_healthcondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter Health Condition "
+            android:padding="5dp" />
+       <!-- <EditText
+            android:id="@+id/et_Medical_Alignment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter Medical Ailment "
+            android:padding="5dp" />-->
+        <EditText
+            android:id="@+id/et_Physical_Alignment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_reason"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:hint="Please enter Physical Ailment "
+            android:padding="5dp" />
+        <LinearLayout
+            android:id="@+id/lt_fircopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectanglebox"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:text="Upload Admission/Origin Information Copy"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/iv_cam_one"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+           android:src="@drawable/cam" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="#342522"
+            android:textColor="@color/halfwhite"/>
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>
